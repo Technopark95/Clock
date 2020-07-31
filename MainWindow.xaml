@@ -1,0 +1,40 @@
+﻿<Window x:Class="WpfApp2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Margin="0,0,0,-50" HorizontalAlignment="Left" Width="874" RenderTransformOrigin="0.499,0.407">
+        <Rectangle x:Name="minutehand" HorizontalAlignment="Left" Height="158" Margin="421,191,0,0" VerticalAlignment="Top" Width="5" RenderTransformOrigin="0.5,0.015" RadiusX="2.44" RadiusY="2.44">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFFC2424"/>
+                    <GradientStop Color="#FFF0621F" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Label x:Name="angles" Content="Label" HorizontalAlignment="Left" Margin="726,347,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="labelhour" Content="Label" HorizontalAlignment="Left" Margin="361,381,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="labelminute" Content="Label" HorizontalAlignment="Left" Margin="405,380,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="labelsecond" Content="Label" HorizontalAlignment="Left" Margin="445,380,0,0" VerticalAlignment="Top"/>
+        <Rectangle x:Name="experiment" HorizontalAlignment="Left" Height="39" Margin="34,331,0,0" VerticalAlignment="Top" Width="65" Fill="#00000000" MouseEnter="experiment_MouseEnter" MouseLeave="experiment_MouseLeave"/>
+        <Rectangle x:Name="hourhand2" HorizontalAlignment="Left" Height="79" Margin="421,191,0,0" VerticalAlignment="Top" Width="5" RenderTransformOrigin="0.495,0.031" RadiusX="2.44" RadiusY="2.44">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFAB00FF"/>
+                    <GradientStop Color="#FFFF0D7E" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="secondhand" HorizontalAlignment="Left" Height="106" Margin="421,191,0,0" VerticalAlignment="Top" Width="5" RenderTransformOrigin="0.487,0.018" RadiusX="2.44" RadiusY="2.44" Fill="Black"/>
+        <Image HorizontalAlignment="Left" Height="352" Margin="248,19,0,0" VerticalAlignment="Top" Width="465" Source="/pngtree-vector-clock-icon-png-image_4187292.png">
+            <Image.OpacityMask>
+                <ImageBrush ImageSource="/pngtree-vector-clock-icon-png-image_4187292.png" TileMode="None" Stretch="Uniform"/>
+            </Image.OpacityMask>
+        </Image>
+        <ComboBox x:Name="combo1" HorizontalAlignment="Left" Margin="16,21,0,0" VerticalAlignment="Top" Width="265" SelectionChanged="ComboBox_SelectionChanged" Text="Select"/>
+
+    </Grid>
+</Window>
